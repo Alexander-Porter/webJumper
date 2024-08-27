@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Jumper</title>
+    <script>
+        window.onload = function() {
+            var hash = window.location.hash.substr(1);
+            if (hash.startsWith("https://")) {
+                var link = document.createElement("a");
+                link.href = hash;
+                link.rel = "noreferrer";
+                link.click();
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Web Jumper</h1>
+    <p>Automatically redirecting...</p>
+</body>
+</html>
